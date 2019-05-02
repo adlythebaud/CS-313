@@ -1,6 +1,6 @@
 <?php
 
   // phpinfo();
-  include 'hello.html';
+  include include("home.php");
 
 ?>

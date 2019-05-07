@@ -1,0 +1,5 @@
+.mJumbotron {
+    background-image: url("../images/home-background.jpg");
+    background-size: 100%;
+    height: 60vh;
+}

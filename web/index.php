@@ -1,6 +1,3 @@
 <?php
-
-  // phpinfo();
-  include include("home.php");
-
+  include "menu.php";
 ?>

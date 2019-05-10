@@ -3,8 +3,8 @@
 <link rel="stylesheet" href="/styles/menu.css">
 
 <nav class ="navbar-expand-sm top-nav">
-    <a href="home.php">home</a>
-    <a href="assignments.php">assignments</a>
-    <a href="contact.php">contact</a>
+    <a href="/home.php">home</a>
+    <a href="/assignments.php">assignments</a>
+    <a href="/contact.php">contact</a>
 </nav>
 

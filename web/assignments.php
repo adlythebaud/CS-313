@@ -15,7 +15,8 @@
         <h4 class="d-flex justify-content-center">Assignments</h4>
     </div>
     <div id="assignments">
-        <a href="./assignments/teach_03/form.php">Teach 03</a>
+        <a href="./assignments/week_03/form.php">Teach 03</a>
+        <a href="./assignments/week_03/prove_03/browse.php">Prove 03 - Shopping Cart</a>
     </div>
 
     

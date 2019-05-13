@@ -26,22 +26,39 @@
                 - Button to add a size to your shopping cart -> store the shoe_id, size, and price in a session variable to add to cart and then to be purchased.
          -->
     </div>
-    <?php 
+    <?php
+        
+        // use these in production.
         $hostname = getenv("HOSTNAME");
         $username = getenv("USERNAME");
         $password = getenv("PASSWORD");
         $database = getenv("DATABASE");
-
         
+        
+
         $conn = mysqli_connect($hostname, $username, $password, $database);
 
         // Check connection
         if (!$conn) {
-            
-            die("Connection failed: " . mysqli_connect_error());
-            
+
+            die("Connection failed: " . mysqli_connect_error());            
+
         }
-        echo "Connection was successfully established.";
+        // get the items to show:
+        $display_items = "SELECT DISTINCT shoe_id, shoe_name, price FROM my_maria_db.website_inventory";
+        $result = $conn->query($display_items);
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                
+                echo "<img src=\"./images/" . $row["shoe_id"] . "_01.jpg\" alt=" . "\"" . $row["shoe_id"] . "\" class=\"img-thumbnail\" height=\"200\" width=\"200\"> <br>"; 
+                echo "<strong>" . $row["shoe_name"] . "</strong><br>Price: $" . $row["price"] . "<br>";
+            }
+        } else {
+            echo "0 results";
+        }
+        $conn->close();
     ?>
 </body>
 

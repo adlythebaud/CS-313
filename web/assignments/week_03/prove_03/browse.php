@@ -35,6 +35,7 @@
         $password = getenv("PASSWORD");
         $database = getenv("DATABASE");
 
+        
         $conn = mysqli_connect($hostname, $username, $password, $database);
 
         // Check connection

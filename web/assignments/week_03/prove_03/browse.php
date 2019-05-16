@@ -1,5 +1,15 @@
 <?php 
-include "../../../menu.php"; 
+    include "../../../menu.php";
+    session_start();
+    if (isset($_POST)) {
+        var_dump($_POST);
+    }
+    
+    if (isset($_POST["item"])) {
+        $_SESSION["item"] = $_POST["item"];
+        
+    }
+    var_dump($_SESSION["item"]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +29,7 @@ include "../../../menu.php";
         <h1 class="d-flex justify-content-center">Welcome to Fire 🔥 Footwear.</h1>
         <h4 class="d-flex justify-content-center">Add some heat to your sneaker game.</h4>
     </div>
-
+    <div id="cart-icon"></div>
     <div id="shoes">
         <!-- 
             Fill this dynamically with shoes. 

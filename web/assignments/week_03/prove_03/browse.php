@@ -45,10 +45,15 @@ include "../../../menu.php";
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 =======
 >>>>>>> Prepping to use JS to populate UI and PHP to pass data back and forth
+=======
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+>>>>>>> Able to pass shoe_id to php
     <link rel="stylesheet" href="./styles/browse.css">
 </head>
 
@@ -57,6 +62,7 @@ include "../../../menu.php";
         <h1 class="d-flex justify-content-center">Welcome to Fire 🔥 Footwear.</h1>
         <h4 class="d-flex justify-content-center">Add some heat to your sneaker game.</h4>
     </div>
+<<<<<<< refs/remotes/heroku/master
 <<<<<<< refs/remotes/heroku/master
 
 <<<<<<< refs/remotes/heroku/master
@@ -86,6 +92,15 @@ include "../../../menu.php";
                 - Price
                 - Button to add a size to your shopping cart -> store the shoe_id, size, and price in a session variable to add to cart and then to be purchased.
          -->
+=======
+
+    <div id="shopping-cart-container" class="row col-2">
+        <div id="shopping-cart"></div>
+        <i class="fas fa-shopping-cart" id="shopping-cart-icon"></i>        
+    </div>
+    <div id="shoes">
+
+>>>>>>> Able to pass shoe_id to php
     </div>
 
 <<<<<<< refs/remotes/heroku/master

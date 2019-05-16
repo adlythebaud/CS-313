@@ -1,10 +1,16 @@
 .shoe-card {
     width: auto;
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
+=======
+>>>>>>> Able to pass shoe_id to php
 }
 
 #shopping-cart-container {
     float: right;    
+<<<<<<< refs/remotes/heroku/master
 =======
 >>>>>>> Prepping to use JS to populate UI and PHP to pass data back and forth
+=======
+>>>>>>> Able to pass shoe_id to php
 }

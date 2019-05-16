@@ -1,3 +1,7 @@
 .shoe-card {
     width: auto;
 }
+
+#shopping-cart-container {
+    float: right;    
+}

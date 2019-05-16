@@ -45,6 +45,7 @@ include "../../../menu.php";
     </div>
 
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
     <div id="shopping-cart-container" class="row col-2">
         <a href="cart.html">
             <div id="shopping-cart"></div>
@@ -56,6 +57,9 @@ include "../../../menu.php";
     </div>
 =======
     <div>
+=======
+    <div id="shoes">
+>>>>>>> Commit.
         <!-- 
             Fill this dynamically with shoes. 
             A shoe item is:
@@ -65,14 +69,8 @@ include "../../../menu.php";
                 - Button to add a size to your shopping cart -> store the shoe_id, size, and price in a session variable to add to cart and then to be purchased.
          -->
     </div>
-    <?php
-        
-        // use these in production.
-        // $hostname = getenv("HOSTNAME");
-        // $username = getenv("USERNAME");
-        // $password = getenv("PASSWORD");
-        // $database = getenv("DATABASE");
 
+<<<<<<< refs/remotes/heroku/master
         $hostname = "mymariadb.ccswpeqyo8av.us-east-2.rds.amazonaws.com";
         $username = "master";
         $password = "02x9sWJoadGKYdIfP38";
@@ -121,6 +119,14 @@ include "../../../menu.php";
        echo "does this work?"; 
     ?>
 >>>>>>> Prepping to use JS to populate UI and PHP to pass data back and forth
+=======
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+>>>>>>> Commit.
     <script src="./scripts/browse.js"></script>
 </body>
 

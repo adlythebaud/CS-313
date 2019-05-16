@@ -1,6 +1,7 @@
 'use strict';
 
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
 var shoeContainer = document.querySelector('#shoes');
 var cartIcon = document.querySelector("#shopping-cart");
 var cartCount = 0;
@@ -22,10 +23,16 @@ function sendPost(e) {
     xhttp.send(vars);
 }
 
+=======
+var shoeContainer = document.querySelector('#shoes');
+// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
+>>>>>>> Commit.
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var shoesArray = Array.from(JSON.parse(this.responseText));
+<<<<<<< refs/remotes/heroku/master
         
         shoesArray.forEach(function (item) {
             // use item[0]
@@ -41,10 +48,19 @@ xhttp.open("get", "get_data.php", true);
 xhttp.send();
 =======
 console.log("working");
+=======
+        // console.log(shoesArray);
+        shoesArray.forEach(function (item) {
+            shoeContainer.innerHTML += '<div class="shoes">' + item[1] + '</div>';
+        });
+    }
+};
+>>>>>>> Commit.
 
-var shoes = document.querySelectorAll(".shoe-input");
-console.log(shoes);
+xhttp.open("get", "get_data.php", true);
+xhttp.send();
 
+<<<<<<< refs/remotes/heroku/master
 shoes.forEach(function (item) {
   item.addEventListener("click", function () {
     
@@ -63,3 +79,5 @@ shoes.forEach(function (item) {
   });
 });
 >>>>>>> Prepping to use JS to populate UI and PHP to pass data back and forth
+=======
+>>>>>>> Commit.

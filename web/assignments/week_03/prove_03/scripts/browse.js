@@ -83,8 +83,8 @@ console.log("working");
 >>>>>>> Able to pass shoe_id to php
         shoesArray.forEach(function (item) {
             // use item[0]
-            var original = '<input class="btn shoes" onclick="sendPost(\'' + item[0] + '\')" value="' + item[1] + '">';
-            // original = original.replace("123", item[0]);
+            var original = '<input class="btn shoes" onclick="sendPost(\'' + item[0] + '\')" value="' + item[1] + '" name="shoes[]">';
+            
             shoeContainer.innerHTML += original;
             
         });

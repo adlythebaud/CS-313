@@ -27,12 +27,30 @@ include "../../../menu.php";
         var_dump($_POST);
     }
     
-    if (isset($_POST["item"])) {
-        $_SESSION["item"] = $_POST["item"];
+    // initialize the session variable
+    
+    // add each $_POST["item"] into an array
+
+    // if we click the shopping cart item, set the session variable equal to the array.
+
+    // if (isset($_POST["item"])) {
+    //     $_SESSION["item"] = $_POST["item"];
         
+    // }
+    // var_dump($_SESSION["item"]);
+
+    if (!empty($_POST["item"])){
+        
+        foreach ($_POST["item"] as $shoe){
+            echo $shoe . "<br>";
+        }
+
     }
+<<<<<<< refs/remotes/heroku/master
     var_dump($_SESSION["item"]);
 >>>>>>> got ajax and session variables to work! Look at network tab always.
+=======
+>>>>>>> getting app logic ready
 ?>
 <!DOCTYPE html>
 <html lang="en">

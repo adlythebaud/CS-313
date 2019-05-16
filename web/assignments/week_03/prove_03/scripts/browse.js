@@ -1,24 +1,19 @@
 'use strict';
 
-console.log("working");
+var shoeContainer = document.querySelector('#shoes');
+// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        var shoesArray = Array.from(JSON.parse(this.responseText));
+        // console.log(shoesArray);
+        shoesArray.forEach(function (item) {
+            shoeContainer.innerHTML += '<div class="shoes">' + item[1] + '</div>';
+        });
+    }
+};
 
-var shoes = document.querySelectorAll(".shoe-input");
-console.log(shoes);
+xhttp.open("get", "get_data.php", true);
+xhttp.send();
 
-shoes.forEach(function (item) {
-  item.addEventListener("click", function () {
-    
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        console.log(this.responseText);    
-      }
-    };
-    xhttp.open("POST", "./browse.php", true);
-
-    xhttp.setRequestHeader("shoe", item.previousElementSibling.value);
-
-    xhttp.send("shoe="+item.previousElementSibling.value);
-  });
-});

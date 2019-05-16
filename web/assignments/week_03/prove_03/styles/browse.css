@@ -1,7 +1,10 @@
 .shoe-card {
     width: auto;
+<<<<<<< refs/remotes/heroku/master
 }
 
 #shopping-cart-container {
     float: right;    
+=======
+>>>>>>> Prepping to use JS to populate UI and PHP to pass data back and forth
 }

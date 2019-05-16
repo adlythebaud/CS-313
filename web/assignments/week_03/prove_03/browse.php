@@ -1,5 +1,6 @@
 <?php 
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
     include "../../../menu.php";
     
     session_start();
@@ -19,6 +20,19 @@
 =======
 include "../../../menu.php"; 
 >>>>>>> Prepping to use JS to populate UI and PHP to pass data back and forth
+=======
+    include "../../../menu.php";
+    session_start();
+    if (isset($_POST)) {
+        var_dump($_POST);
+    }
+    
+    if (isset($_POST["item"])) {
+        $_SESSION["item"] = $_POST["item"];
+        
+    }
+    var_dump($_SESSION["item"]);
+>>>>>>> got ajax and session variables to work! Look at network tab always.
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,6 +57,7 @@ include "../../../menu.php";
         <h1 class="d-flex justify-content-center">Welcome to Fire 🔥 Footwear.</h1>
         <h4 class="d-flex justify-content-center">Add some heat to your sneaker game.</h4>
     </div>
+<<<<<<< refs/remotes/heroku/master
 
 <<<<<<< refs/remotes/heroku/master
 <<<<<<< refs/remotes/heroku/master
@@ -58,6 +73,9 @@ include "../../../menu.php";
 =======
     <div>
 =======
+=======
+    <div id="cart-icon"></div>
+>>>>>>> got ajax and session variables to work! Look at network tab always.
     <div id="shoes">
 >>>>>>> Commit.
         <!-- 

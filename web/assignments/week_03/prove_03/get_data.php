@@ -31,11 +31,17 @@
     if ($result->num_rows > 0) {
         echo json_encode(mysqli_fetch_all($result));
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
     }
     
     // It might be worthwhile saving your rows as session variables..
 =======
     }    
 >>>>>>> Commit.
+=======
+    }
+    
+    // It might be worthwhile saving your rows as session variables..
+>>>>>>> Shopping cart page complete
     $conn->close();
 ?>

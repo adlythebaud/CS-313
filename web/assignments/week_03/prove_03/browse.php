@@ -16,6 +16,7 @@
         $_SESSION["shoes"] = $shoesArray;
     }
     // var_dump($_SESSION["shoes"]);
+<<<<<<< refs/remotes/heroku/master
     
 =======
 include "../../../menu.php"; 
@@ -43,6 +44,8 @@ include "../../../menu.php";
 >>>>>>> getting app logic ready
 =======
     var_dump($_SESSION["shoes"]);
+=======
+>>>>>>> Shopping cart page complete
     
 <<<<<<< refs/remotes/heroku/master
     
@@ -112,14 +115,17 @@ include "../../../menu.php";
 =======
 
     <div id="shopping-cart-container" class="row col-2">
-        <div id="shopping-cart"></div>
-        <i class="fas fa-shopping-cart" id="shopping-cart-icon"></i>        
+        <a href="cart.html">
+            <div id="shopping-cart"></div>
+            <i class="fas fa-shopping-cart" id="shopping-cart-icon"></i>
+        </a>
     </div>
     <div id="shoes">
 
 >>>>>>> Able to pass shoe_id to php
     </div>
 
+<<<<<<< refs/remotes/heroku/master
 <<<<<<< refs/remotes/heroku/master
 <<<<<<< refs/remotes/heroku/master
         $hostname = "mymariadb.ccswpeqyo8av.us-east-2.rds.amazonaws.com";
@@ -181,6 +187,9 @@ include "../../../menu.php";
 =======
     
 >>>>>>> able to save clicked items as session variables.
+=======
+
+>>>>>>> Shopping cart page complete
     <script src="./scripts/browse.js"></script>
 </body>
 

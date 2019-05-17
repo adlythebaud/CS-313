@@ -22,6 +22,8 @@
     $result = $conn->query($display_items);
     if ($result->num_rows > 0) {
         echo json_encode(mysqli_fetch_all($result));
-    }    
+    }
+    
+    // It might be worthwhile saving your rows as session variables..
     $conn->close();
 ?>

@@ -13,7 +13,7 @@
         }           
         $_SESSION["shoes"] = $shoesArray;
     }
-    var_dump($_SESSION["shoes"]);
+    // var_dump($_SESSION["shoes"]);
     
 ?>
 <!DOCTYPE html>
@@ -38,14 +38,16 @@
     </div>
 
     <div id="shopping-cart-container" class="row col-2">
-        <div id="shopping-cart"></div>
-        <i class="fas fa-shopping-cart" id="shopping-cart-icon"></i>        
+        <a href="cart.html">
+            <div id="shopping-cart"></div>
+            <i class="fas fa-shopping-cart" id="shopping-cart-icon"></i>
+        </a>
     </div>
     <div id="shoes">
 
     </div>
 
-    
+
     <script src="./scripts/browse.js"></script>
 </body>
 

@@ -22,19 +22,9 @@ include "../../../menu.php";
 >>>>>>> Prepping to use JS to populate UI and PHP to pass data back and forth
 =======
     include "../../../menu.php";
-    session_start();
-    if (isset($_POST)) {
-        var_dump($_POST);
-    }
     
-    // initialize the session variable
-    // $_SESSION["shoes"] = array();
-
-    // add each $_POST["item"] into an array
-    // $_SESSION["shoes"].push($_POST["item"]);
-
-    // if we click the shopping cart item, set the session variable equal to the array.
-
+    session_start();
+    // check if an item was sent to the server
     if (isset($_POST["item"])) {
         $shoesArray = array();
         if (!isset($_SESSION["shoes"])) {
@@ -54,9 +44,12 @@ include "../../../menu.php";
 =======
     var_dump($_SESSION["shoes"]);
     
+<<<<<<< refs/remotes/heroku/master
     
     
 >>>>>>> able to save clicked items as session variables.
+=======
+>>>>>>> Need to include session start
 ?>
 <!DOCTYPE html>
 <html lang="en">

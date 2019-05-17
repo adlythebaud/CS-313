@@ -1,18 +1,8 @@
 <?php 
     include "../../../menu.php";
-    session_start();
-    if (isset($_POST)) {
-        var_dump($_POST);
-    }
     
-    // initialize the session variable
-    // $_SESSION["shoes"] = array();
-
-    // add each $_POST["item"] into an array
-    // $_SESSION["shoes"].push($_POST["item"]);
-
-    // if we click the shopping cart item, set the session variable equal to the array.
-
+    session_start();
+    // check if an item was sent to the server
     if (isset($_POST["item"])) {
         $shoesArray = array();
         if (!isset($_SESSION["shoes"])) {
@@ -24,8 +14,6 @@
         $_SESSION["shoes"] = $shoesArray;
     }
     var_dump($_SESSION["shoes"]);
-    
-    
     
 ?>
 <!DOCTYPE html>

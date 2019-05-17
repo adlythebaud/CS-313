@@ -6,24 +6,27 @@
     }
     
     // initialize the session variable
-    
+    // $_SESSION["shoes"] = array();
+
     // add each $_POST["item"] into an array
+    // $_SESSION["shoes"].push($_POST["item"]);
 
     // if we click the shopping cart item, set the session variable equal to the array.
 
-    // if (isset($_POST["item"])) {
-    //     $_SESSION["item"] = $_POST["item"];
-        
-    // }
-    // var_dump($_SESSION["item"]);
-
-    if (!empty($_POST["item"])){
-        
-        foreach ($_POST["item"] as $shoe){
-            echo $shoe . "<br>";
-        }
-
+    if (isset($_POST["item"])) {
+        $shoesArray = array();
+        if (!isset($_SESSION["shoes"])) {
+            array_push($shoesArray, $_POST["item"]);
+        } else {
+            $shoesArray = $_SESSION["shoes"];
+            array_push($shoesArray, $_POST["item"]);
+        }           
+        $_SESSION["shoes"] = $shoesArray;
     }
+    var_dump($_SESSION["shoes"]);
+    
+    
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,12 +57,7 @@
 
     </div>
 
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-    <!-- Load our React component. -->
+    
     <script src="./scripts/browse.js"></script>
 </body>
 

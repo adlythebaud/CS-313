@@ -28,29 +28,35 @@ include "../../../menu.php";
     }
     
     // initialize the session variable
-    
+    // $_SESSION["shoes"] = array();
+
     // add each $_POST["item"] into an array
+    // $_SESSION["shoes"].push($_POST["item"]);
 
     // if we click the shopping cart item, set the session variable equal to the array.
 
-    // if (isset($_POST["item"])) {
-    //     $_SESSION["item"] = $_POST["item"];
-        
-    // }
-    // var_dump($_SESSION["item"]);
-
-    if (!empty($_POST["item"])){
-        
-        foreach ($_POST["item"] as $shoe){
-            echo $shoe . "<br>";
-        }
-
+    if (isset($_POST["item"])) {
+        $shoesArray = array();
+        if (!isset($_SESSION["shoes"])) {
+            array_push($shoesArray, $_POST["item"]);
+        } else {
+            $shoesArray = $_SESSION["shoes"];
+            array_push($shoesArray, $_POST["item"]);
+        }           
+        $_SESSION["shoes"] = $shoesArray;
     }
+<<<<<<< refs/remotes/heroku/master
 <<<<<<< refs/remotes/heroku/master
     var_dump($_SESSION["item"]);
 >>>>>>> got ajax and session variables to work! Look at network tab always.
 =======
 >>>>>>> getting app logic ready
+=======
+    var_dump($_SESSION["shoes"]);
+    
+    
+    
+>>>>>>> able to save clicked items as session variables.
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -122,6 +128,7 @@ include "../../../menu.php";
     </div>
 
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
         $hostname = "mymariadb.ccswpeqyo8av.us-east-2.rds.amazonaws.com";
         $username = "master";
         $password = "02x9sWJoadGKYdIfP38";
@@ -178,6 +185,9 @@ include "../../../menu.php";
 
     <!-- Load our React component. -->
 >>>>>>> Commit.
+=======
+    
+>>>>>>> able to save clicked items as session variables.
     <script src="./scripts/browse.js"></script>
 </body>
 

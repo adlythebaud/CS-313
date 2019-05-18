@@ -4,12 +4,16 @@
 <<<<<<< refs/remotes/heroku/master
 <<<<<<< refs/remotes/heroku/master
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
 =======
 >>>>>>> Testing for Azure Deployment Pipeline
+=======
+>>>>>>> changing e
     $hostname = getenv("HOSTNAME");
     $username = getenv("USERNAME");
     $password = getenv("PASSWORD");
     $database = getenv("DATABASE");
+<<<<<<< refs/remotes/heroku/master
 <<<<<<< refs/remotes/heroku/master
 
 =======
@@ -29,6 +33,10 @@
     $username = "master";
     $password = "02x9sWJoadGKYdIfP38";
     $database = "my_maria_db";
+=======
+
+    
+>>>>>>> changing e
     
 <<<<<<< refs/remotes/heroku/master
 >>>>>>> Commit.

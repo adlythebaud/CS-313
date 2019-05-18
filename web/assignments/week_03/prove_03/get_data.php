@@ -2,10 +2,14 @@
         
     // use these in production.
 <<<<<<< refs/remotes/heroku/master
+<<<<<<< refs/remotes/heroku/master
+=======
+>>>>>>> Testing for Azure Deployment Pipeline
     $hostname = getenv("HOSTNAME");
     $username = getenv("USERNAME");
     $password = getenv("PASSWORD");
     $database = getenv("DATABASE");
+<<<<<<< refs/remotes/heroku/master
 
 =======
     // $hostname = getenv("HOSTNAME");
@@ -19,6 +23,9 @@
     $database = "my_maria_db";
     
 >>>>>>> Commit.
+=======
+
+>>>>>>> Testing for Azure Deployment Pipeline
     $conn = mysqli_connect($hostname, $username, $password, $database);
 
     // Check connection

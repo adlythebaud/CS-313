@@ -1,11 +1,16 @@
 <?php
         
     // use these in production.
-    $hostname = getenv("HOSTNAME");
-    $username = getenv("USERNAME");
-    $password = getenv("PASSWORD");
-    $database = getenv("DATABASE");
+    // $hostname = getenv("HOSTNAME");
+    // $username = getenv("USERNAME");
+    // $password = getenv("PASSWORD");
+    // $database = getenv("DATABASE");
 
+    $hostname = "mymariadb.ccswpeqyo8av.us-east-2.rds.amazonaws.com";
+    $username = "master";
+    $password = "02x9sWJoadGKYdIfP38";
+    $database = "my_maria_db";
+    
     $conn = mysqli_connect($hostname, $username, $password, $database);
 
     // Check connection

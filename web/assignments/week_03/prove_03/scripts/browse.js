@@ -28,6 +28,7 @@ xhttp.onreadystatechange = function () {
         
         shoesArray.forEach(function (item) {
             // use item[0]
+            console.log(item[0]);
             var original = '<input class="btn shoes" onclick="sendPost(\'' + item[0] + '\')" value="' + item[1] + '" name="shoes[]">';
             
             shoeContainer.innerHTML += original;

@@ -1,6 +1,4 @@
-<?php
-        
-    // use these in production.
+<?php            
     $hostname = getenv("HOSTNAME");
     $username = getenv("USERNAME");
     $password = getenv("PASSWORD");

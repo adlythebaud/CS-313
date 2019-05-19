@@ -6,7 +6,7 @@
 <br>
 <a href="/assignments.php">Return</a>
 <h1>TEAM ACTIVITY 3: FORMS</h1>
-<form action="<?php $_SERVER['PHP_SELF']?>" method="POST" class="col-md-6">
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" class="col-md-6">
     <div class="form-group">
         <label for="name_input">Name</label>
         <input type="text" name="name" id="name_input" class="form-control" placeholder="Enter your name.">

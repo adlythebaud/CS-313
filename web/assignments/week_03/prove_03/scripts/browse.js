@@ -2,6 +2,8 @@
 
 var shoeContainer = document.querySelector('#shoes');
 var cartIcon = document.querySelector("#shopping-cart");
+
+
 var cartCount = 0;
 
 function sendPost(e) {

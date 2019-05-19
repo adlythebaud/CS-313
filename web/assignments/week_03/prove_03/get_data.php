@@ -35,6 +35,7 @@
     $database = "my_maria_db";
 =======
 
+<<<<<<< refs/remotes/heroku/master
     
 >>>>>>> changing e
     
@@ -45,6 +46,8 @@
 >>>>>>> Testing for Azure Deployment Pipeline
 =======
 >>>>>>> Shopping Cart functionality complete
+=======
+>>>>>>> Committing image
     $conn = mysqli_connect($hostname, $username, $password, $database);
 
     // Check connection

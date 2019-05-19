@@ -36,8 +36,6 @@
         <h1 class="d-flex justify-content-center">Welcome to Fire 🔥 Footwear.</h1>
         <h4 class="d-flex justify-content-center">Add some heat to your sneaker game.</h4>
     </div>
-<<<<<<< refs/remotes/heroku/master
-<<<<<<< refs/remotes/heroku/master
 
     <div id="shopping-cart-container" class="row col-2">
         <a href="cart.html">

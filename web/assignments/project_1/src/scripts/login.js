@@ -7,7 +7,7 @@ class LikeButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      login: false,
+      login: true,
       signup: false,
       passwordReset: false 
     };
@@ -44,6 +44,9 @@ class LikeButton extends React.Component {
         <div>
           <input type="password" name="password" id="password_input" placeholder="Enter your password."></input>
         </div>
+        <div>
+          <input type="password" name="password" id="password_input_confirm" placeholder="Enter your password."></input>
+        </div>
         <input type="submit" value="submit"></input>
       </div>
     );
@@ -65,7 +68,7 @@ class LikeButton extends React.Component {
 
     if (this.state.login) {
       return (
-        <div>
+        <div>          
           <form action="./get_data.php" method="post" className="col-md-6">
             {login}  
           </form>
@@ -75,9 +78,33 @@ class LikeButton extends React.Component {
       );
     }
 
+    if (this.state.signup) {
+      return (
+        <div>
+          <form action="./server-scripts/signup.php" method="post" className="col-md-6">
+            {signup}  
+          </form>
+          {logginButton}
+          {passwordResetButton}
+        </div>
+      );
+    }
+
+    if (this.state.passwordReset) {
+      return (
+        <div>
+          <form action="./get_data.php" method="post" className="col-md-6">
+            {passwordReset}  
+          </form>
+          {logginButton}
+          {signupButton}
+        </div>
+      );
+    }
+
     return (
         <div>
-          <button onClick={this.display}>Click Me!</button>
+          <button onClick={this.display} className='btn btn-primary'>Click Me!</button>
         </div>
         
 

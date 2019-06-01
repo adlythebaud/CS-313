@@ -17,7 +17,7 @@
     <div id="assignments">
         <a href="./assignments/week_03/form.php">Teach 03</a>
         <a href="./assignments/week_03/prove_03/browse.php">Prove 03 - Shopping Cart</a>
-        <a href="./assignments/project_1/src/login.html">Project 1</a>
+        <a href="./assignments/project_1/src/login.php">Project 1</a>
     </div>
 
     

@@ -1,11 +1,11 @@
 <?php
     header("Access-Control-Allow-Origin: *");
     
-    $hostname = "mypostgresqldb.ccswpeqyo8av.us-east-2.rds.amazonaws.com";
-    $username = "master";
-    $password = "Wb3wwKvXmvRcWVOhOc5";
-    $database = "MyPostgreSQLDB";
-    $port = "5432";
+    $hostname =  getnenv("HOSTNAME-PSQL");
+    $username = getnenv("USERNAME-PSQL");
+    $password = getnenv("PASSWORD-PSQL");
+    $database = getnenv("DATABASE-PSQL");
+    $port = getnenv("PORT-PSQL");
 
     try {
         $conn = new PDO("pgsql:host=$hostname;dbname=$database", $username, $password);        
